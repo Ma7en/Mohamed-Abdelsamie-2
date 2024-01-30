@@ -9,9 +9,9 @@ import Landing from "./compontents/global/Landing";
 import About from "./compontents/global/About";
 import Services from "./compontents/global/Services";
 import Work from "./compontents/global/Work";
-import Price from "./compontents/global/Price";
+// import Price from "./compontents/global/Price";
 import Contact from "./compontents/global/Contact";
-import Footer from "./compontents/global/Footer";
+// import Footer from "./compontents/global/Footer";
 import Legal from "./compontents/global/Legal";
 
 function App() {
