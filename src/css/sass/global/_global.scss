@@ -1,0 +1,45 @@
+
+/* start global */
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background: hsl(252, 30%, 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: hsl(352, 75%, 60%); */
+    background: var(--main-color, #3a6cf4);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+
+img,
+.navbar .container .menu-list li a,
+.about .container .cont .right .tabs li a,
+.about .container .cont .right .pages .page.page1 div a,
+.btn {
+    user-select: none;
+}
+
+/* start title */
+.title {
+    text-align: center;
+    padding: 20px 0px 30px;
+    h2 {
+        color: var(--main-color, #3498db);
+        font-weight: 500;
+        font-size: 30px;
+    }
+    p {
+        padding-top: 0px;
+        font-size: 20px;
+        color: var(--font-color);
+    }
+}
+
+
+

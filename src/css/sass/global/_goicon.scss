@@ -1,0 +1,191 @@
+/* start glob */
+
+// .go-to-top {
+//     font-size: 40px;
+//     position: fixed;
+//     bottom: 900px;
+//     left: 15px;
+//     z-index: 50;
+//     visibility: hidden;
+//     opacity: 0;
+//     cursor: pointer;
+//     width: 40px;
+//     height: 40px;
+//     background: linear-gradient(to right, #5065a0, #27394f);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 50%;
+//     transition: var(--main-transition);
+//     -webkit-transition: var(--main-transition);
+//     -moz-transition: var(--main-transition);
+//     -ms-transition: var(--main-transition);
+//     -o-transition: var(--main-transition);
+//     -webkit-border-radius: 50%;
+//     -moz-border-radius: 50%;
+//     -ms-border-radius: 50%;
+//     -o-border-radius: 50%;
+//     &.active {
+//         bottom: 25px;
+//         visibility: visible;
+//         opacity: 1;
+//     }
+//     .i {
+//         z-index: 1;
+//         color: #fff;
+//         font-size: 40px;
+//         transition: var(--main-transition);
+//         -webkit-transition: var(--main-transition);
+//         -moz-transition: var(--main-transition);
+//         -ms-transition: var(--main-transition);
+//         -o-transition: var(--main-transition);
+//     }
+//     &:hover .i {
+//         color: #f2f2f2;
+//         transition: var(--main-transition);
+//         -webkit-transition: var(--main-transition);
+//         -moz-transition: var(--main-transition);
+//         -ms-transition: var(--main-transition);
+//         -o-transition: var(--main-transition);
+//     }
+// }
+
+// .goicon .container {
+//     display: grid;
+//     place-items: center;
+// }
+
+/*
+.gocino {
+    .fl_toggle {
+        // box-shadow: -6px -6px 24px hsl(234, 48%, 98%),
+        //     6px 6px 24px hsl(234, 48%, 88%),
+        //     inset 6px 6px 24px hsl(234, 48%, 98%),
+        //     inset -6px -6px 24px hsl(234, 48%, 88%);
+    }
+}
+
+*/
+
+.goicon {
+
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10;
+    cursor: pointer;
+    transition: var(--main-transition);
+    .fl_toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--container-color);
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+        border: 1px solid var(--main-color);
+        border-radius: 50%;
+        transition: var(--main-transition);
+        animation: cogani 3s infinite linear;
+        @keyframes cogani {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        &:hover {
+            box-shadow: -6px -6px 24px hsl(234, 48%, 98%),
+                6px 6px 24px hsl(234, 48%, 88%),
+                inset 6px 6px 24px hsl(234, 48%, 98%),
+                inset -6px -6px 24px hsl(234, 48%, 88%);
+            transform: scale(0.95);
+            -webkit-transform: scale(0.95);
+            -moz-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            -o-transform: scale(0.95);
+        }
+        i {
+            transition: var(--main-transition) ease-in-out;
+            -webkit-transition: var(--main-transition) ease-in-out;
+            -moz-transition: var(--main-transition) ease-in-out;
+            -ms-transition: var(--main-transition) ease-in-out;
+            -o-transition: var(--main-transition) ease-in-out;
+        }
+        &.active i {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+        }
+        &.active ~ ul .fl_link {
+            opacity: 1;
+        }
+    }
+    .fl_link {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.8s ease-in-out;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+        &:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+        &:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+        .fl_icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--main-color);
+            background-color: var(--container-color);
+            font-size: 1rem;
+            color: var(--icon-color);
+            box-shadow: -4px -4px 16px hsl(234, 48%, 98%),
+                4px 4px 16px hsl(234, 48%, 90%),
+                inset 4px 4px 16px hsl(234, 48%, 98%),
+                inset -4px -4px 16px hsl(234, 48%, 90%);
+            border-radius: 50%;
+            transition: var(--main-transition);
+            &:hover {
+                color: var(--main-color);
+                box-shadow: -4px -4px 16px hsl(234, 48%, 98%),
+                    4px 4px 16px hsl(234, 48%, 90%),
+                    inset 4px 4px 16px hsl(234, 48%, 98%),
+                    inset -4px -4px 16px hsl(234, 48%, 90%);
+            }
+        }
+    }
+    .active ~ ul .fl_link:nth-child(1) {
+        // transform: translate(3.5rem, 0.25rem);
+        transform: translate(0rem, -3.5rem);
+    }
+    .active ~ ul .fl_link:nth-child(2) {
+        // transform: translate(6.5rem, 0.25rem);
+        transform: translate(0rem, -6.5rem);
+    }
+    .active ~ ul .fl_link:nth-child(3) {
+        // transform: translate(9.5rem, 0.25rem);
+        transform: translate(0rem, -9.5rem);
+    }
+}
+

@@ -1,0 +1,158 @@
+/* === start reyset === */
+@import "sass/global/reyset";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: red;
+    // --main-color: #1200ff;
+    // --secondray-color: #00e5ff;
+    --main-color: #3498db;
+    --secondray-color: #85c1e9;
+    --section-bg-color: #f5f5f5;
+    --sec2-bg-color: #e5e7e9;
+    --card-bg: #fff;
+    --card2-bg: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--secondray-color)
+    );
+    --overlay: rgba(49, 55, 61, 0.671);
+    --font-color: #000;
+    // --font2-color: #808080;
+    --font2-color: #363745d6;
+    --box-shadow-btn: 0px 0px 10px 2px var(--secondray-color, #85c1e9);
+
+    --icon-color: hsl(234, 12%, 24%);
+    --container-color: hsl(234, 100%, 99%);
+
+    --main-transition: all 0.5s;
+    --transition-1: all 1s;
+
+    --padding-sc-50: 50px;
+    --padding-sc-100: 50px;
+
+    // --main-color: hsl(234, 62%, 56%);
+
+    // --theme-color-primary: #5065a0;
+    // --theme-color-secondary: #ff7f7f;
+    // --theme-color-gradient: #27394f;
+}
+
+// body {
+//     background: var(--secondray-color);
+// }
+
+body.dark_mode {
+    /* --main-color: #d6602a; */
+    // --second-color: #fff;
+    // --font-color: #212f3d;
+    // --bg-color: #212f3d;
+    // --bg-white: #151515;
+
+    // --main-color: #f5b041;
+    --main-color: #3498db;
+    --secondray-color: #85c1e9;
+    --section-bg-color: #151515;
+    --sec2-bg-color: #212f3d;
+    --card-bg: #212f3d;
+    --card2-bg: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--section-bg-color),
+        var(--sec2-bg-color)
+    );
+    --overlay: #151515;
+    --font-color: #ffffffdb;
+    --font2-color: #e2dcdccc;
+    --box-shadow-btn: 1px 1px 2px 1px #f7f8fc;
+
+    background-color: #151515;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+// icons
+/* start goicon */
+@import "sass/global/goicon";
+
+/* start error */
+@import "sass/global/global";
+
+/* start error */
+@import "sass/global/errorpage";
+
+/* start header */
+@import "sass/global/header";
+
+/* start lading */
+@import "sass/global/landing";
+
+/* start about */
+@import "sass/global/about";
+
+/* start services */
+@import "sass/global/services";
+
+/* start work */
+@import "sass/global/work";
+
+/* start price */
+@import "sass/global/price";
+
+/* start contact */
+@import "sass/global/contact";
+
+/* start footer */
+@import "sass/global/footer";
+
+/* start legal */
+@import "sass/global/legal";
+
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* ========== start media Queries =============== */
+
+/* start max 767px */
+@media (max-width: 767px) {
+}
+
+/* start min 768 */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* start max 991 */
+@media (max-width: 991px) {
+}
+
+/* start min 992 */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* start min 1200 */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* ========== end media Queries =============== */

@@ -1,0 +1,37 @@
+/*-----------legal--------------*/
+.legal {
+    background: var(--sec2-bg-color);
+    padding: 40px 10px;
+    text-align: center;
+    user-select: none;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        p {
+            color: var(--font2-color);
+            font-size: 18px;
+        }
+        span {
+            color: var(--main-color, #3498db);
+        }
+        a {
+            color: var(--main-color, #3498db);
+            cursor: pointer;
+        }
+        .span {
+            animation: heart 2s infinite linear;
+            @keyframes heart {
+                0%,
+                100% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
