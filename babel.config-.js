@@ -7,5 +7,8 @@ module.exports = {
         alias: {
             "@sass": path.resolve(__dirname, "sass"),
         },
+        fallback: {
+            path: require.resolve("path-browserify"),
+        },
     },
 };
